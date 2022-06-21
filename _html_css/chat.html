@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Jazzify</title>
+  
+  <style>
+
+    /* body {
+      padding-top: 20px;
+    } */
+    .navbar {
+
+      position: absolute ;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <a href="hof.html"><img src="jazzify_logo1.png" alt="" width="50" height="50" class="lg_pd_top d-inline-block align-text-top">
+          <span class="brand_name mb-0 h1">Jazzify</span></a>
+        </a>
+      </div>
+  </nav>
+  <div class="chat-container">
+    <header class="chat-header">
+      <!-- <h1><i class="fas fa-smile"></i> ChatCord</h1> -->
+      <a href="index.html" class="btn" >Leave Jazzify</a>
+    </header>
+    <main class="chat-main">
+      <div class="chat-messages">
+					
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn" id="send"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="player">
+        <div class="player__bar">
+            <div class="player__album">
+                <div class="player__albumImg active-song" data-author="Khalid" data-song="Location" data data-src="http://ol5.mp3party.net/online/8418/8418598.mp3"
+                    style="background-image: url(img/album1.png)">
+                </div>
+                <div class="player__albumImg" data-author="Khalid" data-song="Angels" data data-src="http://music.dawnfoxes.com/_fxs_/_upls_/_sngs_/USA/khalid-angels.mp3"
+                    style="background-image: url(img/album1.png)">
+                </div>
+            </div>
+            <div class="player__controls">
+    
+                <div class="player__prev" id="prev">
+                    <img src="img/arrow.svg" alt="prev_song" class="icon">
+                </div>
+    
+                <div class="player__play" id="toggleplay">
+                    <img src="img/play.svg" alt="play_song" class="icon play">
+                    <img src="img/pause.svg" alt="pause_song" class="icon pause">
+                </div>
+    
+                <div class="player__next" id="next">
+                    <img src="img/arrow.svg" alt="next_song" class="icon">
+                </div>
+            </div>
+        </div>
+        <div class="player__timeline">
+            <p class="player__author"></p>
+            <p class="player__song"></p>
+            <div class="player__timelineBar">
+                <div id="playhead"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <!-- <script>
+      
+    </script> -->
+    
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.5/qs.min.js" integrity="sha512-JduLFfiB5t9F2dYayaCCWObe/SeciiMhX2MHAKGvQ22crUA/Sb1l4elG5A7r7Bu1tP2rs1cU5lR1Irx/govVdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+  <script src="index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

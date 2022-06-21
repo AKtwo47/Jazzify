@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Jazzify App</title>
+		
+		<style>
+			.logo {
+				position: relative;
+				top : 20px;
+				left : 25px;
+				z-index: 2;
+			}
+			.title {
+				position: relative;
+				font-family: 'Scrypta Personal Use';
+				font-size: 65px;
+				right: 20px;
+			}
+			.join-main {
+				border-radius:0px 0px 5px 5px ;
+			}
+			.join-container {
+				z-index: 2;
+			}
+			.join-main label{
+				font-family: 'Scrypta Personal Use';
+			}
+			.neonText {
+				color: #fff;
+				text-shadow:
+					/* 0 0 7px #fff,
+					0 0 10px #fff,
+					0 0 21px #fff, */
+					/* 0 0 42px #0fa,
+					0 0 82px #0fa, */
+					0 0 92px #0fa,
+					0 0 102px #0fa,
+					0 0 151px #0fa;
+			}
+			#username {
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+				text-align: center;
+			}
+			.btn:hover {
+				color: #fff;
+				text-shadow:
+					/* 0 0 7px #fff,
+					0 0 10px #fff,*/
+					0 0 21px #fff, 
+					0 0 42px #0fa;
+					/* 0 0 82px #0fa,
+					0 0 92px #0fa,
+					0 0 102px #0fa; */
+					/* 0 0 151px #0fa; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1 class="title neonText"><img src="jazzify_logo1.png " height="75px" width="75px" class="logo"><span>Jazzify</span> </h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter Username"
+							required
+						/>
+					</div>
+					<!-- <div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+					</div> -->
+					<button type="submit" class="btn">Join Chat</button>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
